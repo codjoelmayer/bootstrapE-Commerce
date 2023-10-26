@@ -35,7 +35,7 @@ a{
 /* All selection */
 section {
     scroll-margin-block: 6rem;
-}g
+}
 /* Card */
 #products :is(.card) {
     width: 18rem;
