@@ -32,6 +32,10 @@ a{
     scale: 1.2;
     background-color: var(--alternative);
 }
+/* All selection */
+section {
+    scroll-margin-block: 6rem;
+}g
 /* Card */
 #products :is(.card) {
     width: 18rem;
