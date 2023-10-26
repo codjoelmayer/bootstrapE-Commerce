@@ -1,3 +1,5 @@
+/* Bootstrap icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 /* Universal selector */
 *,
 *::before,
@@ -6,7 +8,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary: black;
+    --secondary: hsl(123, 50%, 100%);
+    --alternative: rgb(4, 95, 4, .8);
+    --awesome: #ad8913;
+}
+/* Display - grid */
+
 /* navbar */
 img[alt="logo"] {
     width: 5rem;
+}
+body{
+    text-align: center;
+}
+/* Navbar */
+a{
+    transition: all .3s;
+}
+.navbar a:is(:hover, :focus) {
+    text-decoration: underline;
+    scale: 1.2;
+    background-color: var(--alternative);
+}
+/* Card */
+#products :is(.card) {
+    width: 18rem;
+}
+
+@media screen and (width < 800px) {
+    .admin-table {
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    #admin :is(img) {
+        width: 100%!important;
+    }
 }

@@ -12,7 +12,7 @@
     <title>Bootstrap E-Commerce</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
             <img src="https://i.postimg.cc/c1b6CT50/logo.png" loading="lazy" class="img-fluid img-thumbnail" alt="logo">
@@ -23,29 +23,285 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Product</a>
+                <a class="nav-link" href="#products">Our Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Checkout</a>
+                <a class="nav-link" href="#checkout">Checkout</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Admin</a>
+                <a class="nav-link" href="#admin">Admin</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
     <main class="container-fluid">
+        <section class="container" id="home">
+            <div class="row vh-100 justify-content-center align-items-center">
+                <h1 class="display-1">
+                    Welcome 
+                    <span>to JT Laptops</span>
+                </h1>
+            </div>
+            <div class="row">
+                <h3 class="display-3">
+                    Product features
+                </h3>
+            </div>
+            <div class="row">
+                <!-- Sliding show -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators bg-success">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://i.postimg.cc/gJKtZmp1/Acer-Extensa-15-6-inch-256-GBSSd-8-GBRAM.png" class="d-block w-50 mx-auto" loading="lazy" alt="Laptop 1">
+                        <div class="carousel-caption opacity-75 bg-secondary d-none d-md-block">
+                          <h5>Acer Extensa</h5>
+                          <p>It has 256 GB SSD</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.postimg.cc/65tcMqdc/Dell-Latitude-E5450-i3-5th-GEN-1-for-business-10000.jpg" class="d-block w-50 mx-auto" loading="lazy" alt="Laptop 2">
+                        <div class="carousel-caption opacity-75 bg-secondary d-none d-md-block">
+                          <h5>Dell Latitude</h5>
+                          <p>It i3 Gen for business</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.postimg.cc/0j2WGF2j/Acer-Travel-Mate-Intel-Corei5-SSD512-8-GBRAM.png" class="d-block w-50 mx-auto" alt="Laptop 3">
+                        <div class="carousel-caption opacity-75 bg-secondary d-none d-md-block">
+                          <h5>Acer Travel</h5>
+                          <p>It has 512 GB SSD and 8 GB on RAM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row my-3">
+                <a href="#products">
+                    <button class="btn btn-success">View More</button>
+                </a>
+            </div>
+        </section>
+        <section class="container" id="about">
+            <div class="row my-3">
+                <p class="lead shadow border border-success rounded-5">
+                    <span class="fs-1 text-success">JT Laptops</span> is Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum consequatur totam eligendi dolorem asperiores odit ea, molestias voluptates. Possimus velit rem quidem corrupti illum dicta est, quis sed accusantium?
+                </p>
+            </div>
+            <div class="row">
+                <h3 class="display-3">Meet the team</h3>
+            </div>
+            <div class="row my-3 d-block d-sm-flex">
+                <div class="col">
+                    <img src="https://i.postimg.cc/zD64pgWS/joel2.jpg" class="img-fluid w-75 rounded-3 rounded-top-pill rounded-bottom-circle" loading="lazy"  alt="Profile">
+                </div>
+                <div class="col">
+                    <p class="lead">
+                        <span class="text-primary border rounded-3 px-3">Joel</span> Tshimanga Mukanya, is the CEO of JT Laptop
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="products">
+            <div class="row my-3">
+                <h3 class="display-3">Products</h3>
+            </div>
+            <div class="row justify-content-end my-3">
+                <input class="form-control w-50" type="text" placeholder="Search by product name" required>
+            </div>
+            <div class="row justify-content-around gap-3">
+                <div class="card shadow rounded-2">
+                    <img src="https://i.postimg.cc/65tcMqdc/Dell-Latitude-E5450-i3-5th-GEN-1-for-business-10000.jpg" class="card-img-top img-thumbnail" alt="laptop 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Dell Latitude</h5>
+                      <p class="card-text">Dell Latitude E5450 i3 5th GEN 1 for business</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" type="button" class="btn btn-success">View More</a type="button">
+                        <button class="btn btn-outline-success">Cart</button>
+                    </div>
+                </div>
+                <div class="card shadow rounded-2">
+                    <img src="https://i.postimg.cc/gJKtZmp1/Acer-Extensa-15-6-inch-256-GBSSd-8-GBRAM.png" class="card-img-top img-thumbnail" alt="laptop 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Acer Extensa</h5>
+                      <p class="card-text">Acer Extensa 15.6 inch 256 GB SSD 8GB RAM</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" type="button" class="btn btn-success">View More</a type="button">
+                        <button class="btn btn-outline-success">Cart</button>
+                    </div>
+                </div>
+                <div class="card shadow rounded-2">
+                    <img src="https://i.postimg.cc/0j2WGF2j/Acer-Travel-Mate-Intel-Corei5-SSD512-8-GBRAM.png" class="card-img-top img-thumbnail" alt="laptop 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Acer Travel</h5>
+                      <p class="card-text">Acer Travel Mate Intel Core i5 SSD 512 8GB RAM</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" type="button" class="btn btn-success">View More</a type="button">
+                        <button class="btn btn-outline-success">Cart</button>
+                    </div>
+                </div>
+                <div class="card shadow rounded-2">
+                    <img src="https://i.postimg.cc/7Y83v1PB/HPElite-Book-Intel-Core-i5-1135-G7-256-GBSSD-8-GB.png" class="card-img-top img-thumbnail" alt="laptop 1">
+                    <div class="card-body">
+                      <h5 class="card-title">HP Elite</h5>
+                      <p class="card-text">HP Elite Book Intel Core i5 1135 G7 256 GB and SSD 8GB</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="#" type="button" class="btn btn-success">View More</a type="button">
+                        <button class="btn btn-outline-success">Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="checkout">
+            <div class="row">
+                <h3 class="display-3">Checkout</h3>
+            </div>
+            <div class="row">
+                <p class="lead">
+                    Include your information
+                </p>
+            </div>
+        </section>
+        <section class="container" id="contact">
+            <div class="row">
+                <h3 class="display-3">Contact us</h3>
+            </div>
+            <div class="row d-block d-md-flex">
+                <div class="col">
+                    <form action="https://formspree.io/f/xoqoydae" method="post">
+                        <div class="input-group my-3">
+                            <input type="text" class="form-control" placeholder="Enter your first name" name="firstName" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your last name" name="surname" required>
+                        </div>
+                        <div class="input-group my-3">
+                            <textarea name="message" class="w-100 form-control"  placeholder="Please enter your message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div>
+                        <label class="form-lable">Cellphone number: <span>0798525478</span></label>
+                    </div>
+                    <div>
+                        <label class="form-lable">Email: <span>joel@gmail.com</span></label>
+                    </div>
+                    <div class="icon-wrapper d-flex justify-content-center">
+                        <a href="https://www.youtube.com/channel/UCNoBN4_Ho5kXoyJHc4MtD0Q" target="_blank">
+                            JT Devs's Channel
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="container" id="admin">
+            <div class="row">
+                <h3 class="display-3">Admin</h3>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <button class="btn btn-outline-success float-start">Sort</button>
+                </div>
+                <div class="col">
+                    <select class="form-select" aria-label="Default" name="filterProduct" id="filterProduct">
+                        <option selected value="prodName">Product Name</option>
+                        <option value="prodPrice">Product Price</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row my3">
+                <div class="admin-table">
+                    <table class="table responsive table-hover">
+                        <thead>
+                            <tr class="table-success">
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Image</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Dell Latitude
+                                </td>
+                                <td>
+                                    Dell Latitude E5450 i3 5th GEN 1 for business
+                                </td>
+                                <td>
+                                    <img src="https://i.postimg.cc/65tcMqdc/Dell-Latitude-E5450-i3-5th-GEN-1-for-business-10000.jpg" class="img-fluid w-25" alt="Laptop 1">
+                                </td>
+                                <td>
+                                    4
+                                </td>
+                                <td>
+                                    R10,000
+                                </td>
+                                <td>
+                                    <i class="bi bi-pencil-square"></i>
+                                    <i class="bi bi-trash3-fill"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Acer Extensa
+                                </td>
+                                <td>
+                                    Acer Extensa 15.6 inch
+                                </td>
+                                <td>
+                                    <img src="https://i.postimg.cc/gJKtZmp1/Acer-Extensa-15-6-inch-256-GBSSd-8-GBRAM.png" class="img-fluid w-25" alt="Laptop 1">
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                                <td>
+                                    R11,000
+                                </td>
+                                <td>
+                                    <i class="bi bi-pencil-square"></i>
+                                    <i class="bi bi-trash3-fill"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="container-fluid bg-dark">
 
